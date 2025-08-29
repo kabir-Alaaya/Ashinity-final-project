@@ -59,7 +59,7 @@ export default function Header() {
           className="md:hidden text-2xl"
           aria-label="Toggle menu"
         >
-          <HiOutlineMenuAlt3 className="w-6 h-6" />
+          <HiOutlineMenuAlt3 className="w-6 h-6 cursor-pointer" />
         </button>
       </div>
 

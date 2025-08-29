@@ -1,7 +1,11 @@
 export default function Footer() {
 
 return (
-    <div></div>
+    <footer className="fixed-top-0">
+        <div>
+            Footer
+        </div>
+    </footer>
 )
 
 
