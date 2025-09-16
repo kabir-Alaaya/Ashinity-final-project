@@ -5,7 +5,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/70 via-[#5937E0]/70 to-indigo-800/70 z-0"></div>
       
       
-       <div className="absolute inset-0 bg-[url('hero-bg.png')] bg-cover bg-center bg-no-repeat opacity-20 z-0"></div> 
+       <div className="absolute inset-0 bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat opacity-20 z-0"></div> 
       
       <div className="container max-w-6xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 items-center">
