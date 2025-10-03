@@ -27,7 +27,7 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex flex-grow justify-center">
           <ul className="flex space-x-4 lg:space-x-12">
-            {["Home", "Vehicles", "Details", "About Us", "Contact Us"].map((item) => (
+            {["Home", "Vehicles", "Details", "About ", "Contact Us"].map((item) => (
               <li key={item}>
                 <Link
                   to={`/${item === "Home" ? "" : item}`}
@@ -71,7 +71,7 @@ export default function Header() {
       >
         <nav className="container mx-auto px-4 py-6">
           <ul className="space-y-4">
-            {["Home", "Vehicles", "Details", "About Us ", "Contact Us"].map((item) => (
+            {["Home", "Vehicles", "Details", "About  ", "Contact Us"].map((item) => (
               <li key={item}>
                 <Link
                   to={`/${item === "Home" ? "" : item}`}
