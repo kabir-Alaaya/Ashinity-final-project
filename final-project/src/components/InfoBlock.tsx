@@ -13,12 +13,27 @@ const AnimatedCard = ({
   iconBg,
   iconColor,
   delay = 0,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  iconBg: string;
+  iconColor: string;
+  delay?: number;
 }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50, scale: 0.9 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      whileHover={{ y: -8, scale: 1.02 }}
+      whileHover={{ 
+        y: -8, 
+        scale: 1.02,
+        transition: {
+          type: "spring",
+          stiffness: 400,
+          damping: 17,
+        }
+      }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{
         type: "spring",
